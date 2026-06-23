@@ -1,0 +1,21 @@
+# Environnements (secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Dependencies
+**/node_modules/
+backend/vendor/
+
+# Build outputs
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+*.suo
+*.user

@@ -1,0 +1,333 @@
+La gestion manuelle des stocks de vêtements (tailles, disponibilité, état) est complexe et sujette aux erreurs. Les réservations se font souvent par téléphone ou en personne, ce qui limite l'accessibilité et crée des conflits de planning. Le suivi financier (cautions, paiements, retards) est difficile sans système centralisé. De plus, l'entretien et le nettoyage des tenues nécessitent une traçabilité rigoureuse, tandis que la concurrence croissante exige une meilleure visibilité en ligne et une expérience client optimale. 
+
+Objectif et Vision 
+
+L'objectif de ce système de gestion pour boutique de location de tenues traditionnelles est de créer une plateforme intégrée qui répond à ces défis multiples. Le système utilisera des technologies modernes pour digitaliser et automatiser les processus clés de la boutique. 
+
+Sa vision est d'offrir aux gérants de boutique un outil complet pour : 
+
+Optimiser la gestion des stocks avec un suivi en temps réel de chaque tenue (disponibilité, état, historique) 
+
+Simplifier les réservations via une interface en ligne accessible 24/7 
+
+Automatiser la gestion financière (facturation, cautions, relances) 
+
+Améliorer l'expérience client avec un système de réservation fluide et des rappels automatiques 
+
+Faciliter la prise de décision grâce à des analyses de performance et des indicateurs clés 
+
+Ultimement, la vision est de moderniser la gestion des boutiques de location de tenues traditionnelles pour les rendre plus efficaces, rentables et compétitives. 
+
+ 
+
+ 
+
+Forme 
+
+Gestion du Catalogue et des Stocks 
+
+Besoins : 
+
+Inventaire détaillé : Les gérants ont besoin de connaître en temps réel le nombre exact de tenues disponibles, par modèle, taille, couleur et état 
+
+Traçabilité : Besoin de suivre l'historique de chaque tenue (nombre de locations, réparations, nettoyages) 
+
+Gestion des variantes : Besoin de gérer les différentes tailles, couleurs et accessoires associés à chaque modèle 
+
+Alertes de maintenance : Besoin d'être notifié quand une tenue nécessite un nettoyage, une réparation ou un remplacement 
+
+Valorisation du stock : Besoin de connaître la valeur totale du stock et le retour sur investissement par tenue 
+
+Exigences Fonctionnelles : 
+
+Le système doit permettre l'ajout de tenues avec photos multiples, descriptions détaillées, et caractéristiques (type, taille, couleur, matière, origine) 
+
+Le système doit suivre l'état de chaque tenue (Disponible, Louée, En nettoyage, En réparation, Retirée) 
+
+Le système doit générer automatiquement des alertes lorsqu'une tenue atteint un certain nombre de locations 
+
+Le système doit permettre de marquer des tenues comme "indisponibles" pour une période donnée 
+
+Le système doit suivre les accessoires associés à chaque tenue (bijoux, chaussures, voile, etc.) 
+
+Exigences Non-Fonctionnelles : 
+
+Performance : L'affichage du catalogue doit se charger en moins de 2 secondes 
+
+Précision : Le statut de disponibilité doit être mis à jour en temps réel 
+
+Facilité d'utilisation : L'ajout d'une nouvelle tenue doit prendre moins de 3 minutes 
+
+Forme 
+
+ 
+
+Gestion des Réservations et Locations 
+
+Besoins : 
+
+Réservation en ligne : Les clients ont besoin de pouvoir réserver 24/7 sans se déplacer 
+
+Calendrier de disponibilité : Besoin de voir en temps réel les dates disponibles pour chaque tenue 
+
+Gestion des conflits : Besoin d'éviter les doubles réservations et gérer les périodes tampons pour le nettoyage 
+
+Flexibilité : Besoin de gérer les modifications, annulations et prolongations de location 
+
+Essayages : Besoin de planifier des rendez-vous d'essayage avant la location finale 
+
+ 
+
+Exigences Fonctionnelles : 
+
+Le système doit permettre aux clients de rechercher des tenues par critères (type, taille, couleur, prix, événement) 
+
+Le système doit afficher un calendrier de disponibilité pour chaque tenue 
+
+Le système doit calculer automatiquement le prix total selon la durée de location 
+
+Le système doit bloquer automatiquement 1-2 jours entre deux locations pour le nettoyage 
+
+Le système doit gérer les réservations avec essayage préalable 
+
+Le système doit permettre la modification ou l'annulation selon les conditions définies 
+
+Le système doit envoyer des confirmations et rappels par email/SMS 
+
+ 
+
+Exigences Non-Fonctionnelles : 
+
+Disponibilité : Le système de réservation en ligne doit avoir une disponibilité de 99,5% 
+
+Sécurité : Les données de réservation doivent être sécurisées et conformes au RGPD 
+
+Ergonomie : Le processus de réservation doit être complété en moins de 5 minutes 
+
+ 
+
+ 
+
+Parties Prenantes : 
+
+Clients : Utilisent le système pour réserver et gérer leurs locations 
+
+Personnel de boutique : Gère les réservations en magasin et par téléphone 
+
+Gérant : Définit les règles de location (durée minimale, délais d'annulation, tarifs) 
+
+ 
+
+Forme 
+
+Gestion Commerciale et Financière 
+
+Besoins : 
+
+Tarification flexible : Besoin de définir des prix variables selon la saison, la demande et le type de client 
+
+Gestion des cautions : Besoin de suivre rigoureusement les cautions versées et restituées 
+
+Facturation automatique : Besoin de générer rapidement des factures et reçus conformes 
+
+Suivi des paiements : Besoin de tracer tous les paiements (acomptes, soldes, retards) 
+
+Gestion des pénalités : Besoin de calculer automatiquement les frais de retard ou de dommages 
+
+Reporting financier : Besoin de tableaux de bord pour suivre le chiffre d'affaires et la rentabilité 
+
+ 
+
+Exigences Fonctionnelles : 
+
+Le système doit permettre de définir des grilles tarifaires multiples (jour, weekend, semaine, haute saison) 
+
+Le système doit calculer et suivre les cautions pour chaque location 
+
+Le système doit générer automatiquement des factures conformes à la législation locale 
+
+Le système doit gérer plusieurs modes de paiement (espèces, carte bancaire, virement, paiement en ligne) 
+
+Le système doit calculer automatiquement les pénalités de retard selon le barème défini 
+
+Le système doit générer des relances automatiques pour les paiements en retard 
+
+Le système doit produire des rapports financiers (CA quotidien, mensuel, annuel) 
+
+ 
+
+Exigences Non-Fonctionnelles : 
+
+Sécurité : Toutes les données financières doivent être chiffrées 
+
+Conformité : Les factures doivent respecter les normes comptables et fiscales 
+
+Traçabilité : Tous les mouvements financiers doivent être enregistrés et non modifiables 
+
+Parties Prenantes : 
+
+Gérant/Propriétaire : Définit la stratégie tarifaire et suit la rentabilité 
+
+Comptable : Accède aux données financières pour la comptabilité générale 
+
+Personnel de boutique : Encaisse les paiements et gère les cautions 
+
+Clients : Reçoivent les factures et peuvent consulter leur historique de paiements 
+
+Forme 
+
+D. Gestion de la Relation Client 
+
+ 
+
+Besoins : 
+
+Base de données clients : Besoin de centraliser toutes les informations clients (coordonnées, historique, préférences) 
+
+Fidélisation : Besoin d'identifier et récompenser les clients réguliers 
+
+Communication : Besoin d'envoyer des communications ciblées (promotions, nouveautés, rappels) 
+
+Service après-location : Besoin de gérer les réclamations, avis et retours clients 
+
+Personnalisation : Besoin d'offrir une expérience personnalisée selon le profil client 
+
+Exigences Fonctionnelles : 
+
+Le système doit créer automatiquement un profil client à la première réservation 
+
+Le système doit stocker l'historique complet des locations de chaque client 
+
+Le système doit permettre la création de programmes de fidélité (points, réductions) 
+
+Le système doit permettre l'envoi d'emails et SMS groupés ou individuels 
+
+Le système doit gérer les avis et notes laissés par les clients 
+
+Le système doit permettre aux clients de créer des listes de favoris 
+
+Le système doit envoyer des rappels automatiques (essayage, retrait, retour de tenue) 
+
+Exigences Non-Fonctionnelles : 
+
+Confidentialité : Les données clients doivent être protégées conformément au RGPD 
+
+Personnalisation : Les communications doivent pouvoir être segmentées selon les profils 
+
+Réactivité : Les messages automatiques doivent être envoyés dans les 5 minutes suivant l'événement déclencheur 
+
+Parties Prenantes : 
+
+Clients : Bénéficient d'un service personnalisé et peuvent gérer leur compte 
+
+Personnel de boutique : Utilise les informations clients pour améliorer le service 
+
+Responsable marketing : Crée et envoie les campagnes de communication 
+
+Gérant : Analyse les données clients pour améliorer l'offre 
+
+Forme 
+
+E. Gestion Opérationnelle et Logistique 
+
+Besoins : 
+
+Gestion du nettoyage : Besoin de planifier et suivre le nettoyage de chaque tenue après location 
+
+Gestion des réparations : Besoin de tracer les réparations nécessaires et leur coût 
+
+Contrôle qualité : Besoin de vérifier l'état des tenues au retour (présence de dommages) 
+
+Planning du personnel : Besoin de gérer les horaires et tâches du personnel 
+
+Gestion des prestataires : Besoin de coordonner avec les nettoyeurs et couturiers externes 
+
+Livraison/Retrait : Besoin de gérer les options de livraison et de retrait 
+
+Exigences Fonctionnelles : 
+
+Le système doit créer automatiquement une tâche de nettoyage au retour de chaque tenue 
+
+Le système doit permettre l'inspection des tenues avec rapport photo en cas de dommage 
+
+Le système doit gérer un planning de maintenance pour chaque tenue 
+
+Le système doit suivre les tenues envoyées chez des prestataires externes 
+
+Le système doit permettre la planification des livraisons et retraits 
+
+Le système doit gérer un calendrier de tâches pour le personnel 
+
+Le système doit calculer le coût de revient de chaque location (nettoyage + maintenance) 
+
+Exigences Non-Fonctionnelles : 
+
+Fiabilité : Le système de suivi des tenues ne doit perdre aucune information 
+
+Traçabilité : Chaque mouvement de tenue doit être enregistré avec date, heure et responsable 
+
+Accessibilité mobile : Le personnel doit pouvoir utiliser le système sur tablette/smartphone 
+
+Parties Prenantes : 
+
+Personnel de boutique : Effectue les inspections, prépare les tenues, gère les livraisons 
+
+Responsable logistique : Planifie les tâches et coordonne avec les prestataires 
+
+Prestataires externes : Nettoyeurs, couturiers, livreurs 
+
+Clients : Reçoivent leurs tenues et peuvent suivre leur livraison 
+
+Forme 
+
+F. Analyse et Aide à la Décision 
+
+Besoins : 
+
+Indicateurs de performance : Besoin de suivre les KPIs clés (taux d'occupation, CA par tenue, taux de rotation) 
+
+Analyse de la demande : Besoin d'identifier les tenues les plus demandées et les périodes creuses 
+
+Optimisation des prix : Besoin d'ajuster les tarifs selon la demande et la saisonnalité 
+
+Prévisions : Besoin d'anticiper les besoins en stock et en personnel 
+
+Reporting : Besoin de rapports périodiques pour évaluer la performance 
+
+Analyse client : Besoin de comprendre les comportements et préférences des clients 
+
+Exigences Fonctionnelles : 
+
+Le système doit afficher un tableau de bord avec les KPIs principaux en temps réel 
+
+Le système doit générer des rapports de performance par tenue, par période, par catégorie 
+
+Le système doit analyser les tendances de réservation pour identifier les pics de demande 
+
+Le système doit calculer le taux d'occupation de chaque tenue 
+
+Le système doit identifier les tenues sous-performantes ou sur-performantes 
+
+Le système doit fournir des outils de simulation pour tester différents scénarios tarifaires 
+
+Le système doit produire des recommandations d'achat basées sur la demande 
+
+Exigences Non-Fonctionnelles : 
+
+Performance : Les tableaux de bord doivent se charger en moins de 3 secondes 
+
+Actualité : Les données doivent être mises à jour quotidiennement au minimum 
+
+Accessibilité : Les rapports doivent être compréhensibles par des non-experts 
+
+Exportabilité : Tous les rapports doivent pouvoir être exportés en PDF/Excel 
+
+Parties Prenantes : 
+
+Gérant/Propriétaire : Prend les décisions stratégiques basées sur les analyses 
+
+Responsable commercial : Ajuste la stratégie tarifaire et promotionnelle 
+
+Personnel de boutique : Consulte les données pour améliorer le service 
+
+Investisseurs : Peuvent accéder à des rapports de performance globale 
