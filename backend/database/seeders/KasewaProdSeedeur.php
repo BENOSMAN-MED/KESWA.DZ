@@ -5,19 +5,13 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Utilisateur;
-use Spatie\Permission\Models\Role;
 
 class KasewaProdSeedeur extends Seeder
 {
     public function run(): void
     {
-        // Rôles
-        Role::firstOrCreate(['name' => 'admin',        'guard_name' => 'web']);
-        Role::firstOrCreate(['name' => 'proprietaire', 'guard_name' => 'web']);
-        Role::firstOrCreate(['name' => 'locataire',    'guard_name' => 'web']);
-
         // Compte admin uniquement
-        $admin = Utilisateur::firstOrCreate(
+        Utilisateur::firstOrCreate(
             ['email' => 'admin@kasewa.dz'],
             [
                 'nom'                 => 'Admin KASEWA',
@@ -28,7 +22,5 @@ class KasewaProdSeedeur extends Seeder
                 'telephone'           => '0555000000',
             ]
         );
-
-        $admin->syncRoles(['admin']);
     }
 }
