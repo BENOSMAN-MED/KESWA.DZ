@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Hash;
 use App\Models\Utilisateur;
 use App\Models\Tenue;
 use App\Models\PhotoTenue;
-use Spatie\Permission\Models\Role;
 
 class KasewaSeedeur extends Seeder
 {
@@ -84,13 +83,6 @@ class KasewaSeedeur extends Seeder
                 'wilaya'              => 'Tlemcen',
             ]
         );
-
-        // ─── Assignation des rôles Spatie ────────────────────────
-        $admin->syncRoles([$roleAdmin]);
-        $fatima->syncRoles([$roleProprietaire]);
-        $khadija->syncRoles([$roleProprietaire]);
-        $samira->syncRoles([$roleProprietaire]);
-        $amina->syncRoles([$roleLocataire]);
 
         // ─── Tenues ──────────────────────────────────────────────
         $catalogue = [
