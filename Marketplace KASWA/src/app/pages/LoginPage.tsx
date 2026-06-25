@@ -23,13 +23,6 @@ export function LoginPage() {
     else navigate("/dashboard/renter");
   };
 
-  const demoAccounts = [
-    { email: "admin@kasewa.dz",    password: "Benos1", label: "Administrateur",        color: "bg-[#8B2635]" },
-    { email: "fatima@kasewa.dz",   password: "Benos2", label: "Fatima — Investisseur", color: "bg-[#1B4D3E]" },
-    { email: "khadija@kasewa.dz",  password: "Benos3", label: "Khadija — Boutique",    color: "bg-[#2d6b55]" },
-    { email: "samira@kasewa.dz",   password: "Benos4", label: "Samira — Propriétaire", color: "bg-[#4a7c6a]" },
-    { email: "amina@kasewa.dz",    password: "Benos5", label: "Amina — Locataire",     color: "bg-[#C9924A]" },
-  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -79,41 +72,6 @@ export function LoginPage() {
 
           <h1 className="text-gray-900 mb-2" style={{ fontSize: "1.8rem", fontWeight: 700 }}>Se connecter</h1>
           <p className="text-gray-500 mb-6">Accédez à votre espace personnel</p>
-
-          {/* Comptes de démonstration */}
-          <div className="mb-6 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-            <p className="text-xs text-gray-400 mb-3" style={{ fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.05em" }}>
-              Connexion rapide — Comptes de test
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {demoAccounts.map((acc) => (
-                <button
-                  key={acc.email}
-                  type="button"
-                  disabled={loading}
-                  onClick={async () => {
-                    setError("");
-                    setLoading(true);
-                    const user = await login(acc.email, acc.password);
-                    setLoading(false);
-                    if (user) {
-                      if (user.role === "admin") navigate("/dashboard/admin");
-                      else if (user.role === "owner") navigate("/dashboard/owner");
-                      else navigate("/dashboard/renter");
-                    } else {
-                      setEmail(acc.email);
-                      setPassword(acc.password);
-                      setError("Erreur de connexion au compte de démonstration.");
-                    }
-                  }}
-                  className={`${acc.color} text-white text-xs px-3 py-1.5 rounded-full hover:opacity-90 transition-opacity disabled:opacity-50`}
-                  style={{ fontWeight: 500 }}
-                >
-                  {acc.label}
-                </button>
-              ))}
-            </div>
-          </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
